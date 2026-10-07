@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CampusFind | Campus Lost & Found</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Campus<span>Find</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html" class="active">
+                Home
+            </a>
+
+            <a href="report.html">
+                Report Item
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="tagline">
+                CAMPUS LOST & FOUND
+            </p>
+
+            <h1>
+                Lost something?<br>
+                <span>Let's help you find it.</span>
+            </h1>
+
+            <p class="hero-description">
+                CampusFind makes it easier for students to report,
+                search and return lost belongings around campus.
+            </p>
+
+            <a href="report.html" class="primary-button">
+                Report an Item
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SEARCH SECTION -->
+
+    <section class="search-section">
+
+        <p class="section-label">
+            FIND AN ITEM
+        </p>
+
+        <h2>
+            Looking for something?
+        </h2>
+
+        <p class="section-description">
+            Search through lost and found items reported by students.
+        </p>
+
+
+        <div class="search-box">
+
+            <span class="search-icon">
+                🔍
+            </span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for an item..."
+                autocomplete="off"
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FILTERS -->
+
+    <section class="filters">
+
+        <button
+            class="filter active-filter"
+            data-filter="all"
+            type="button"
+        >
+            All Items
+        </button>
+
+        <button
+            class="filter"
+            data-filter="lost"
+            type="button"
+        >
+            Lost
+        </button>
+
+        <button
+            class="filter"
+            data-filter="found"
+            type="button"
+        >
+            Found
+        </button>
+
+        <button
+            class="filter"
+            data-filter="electronics"
+            type="button"
+        >
+            Electronics
+        </button>
+
+        <button
+            class="filter"
+            data-filter="documents"
+            type="button"
+        >
+            Documents
+        </button>
+
+        <button
+            class="filter"
+            data-filter="accessories"
+            type="button"
+        >
+            Accessories
+        </button>
+
+    </section>
+
+
+
+    <!-- ITEMS SECTION -->
+
+    <section class="items-section">
+
+        <div class="items-heading">
+
+            <div>
+
+                <p class="section-label">
+                    RECENT REPORTS
+                </p>
+
+                <h2>
+                    Lost & Found Items
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <!--
+            JavaScript loads the actual reports
+            from Google Sheets into this container.
+        -->
+
+        <div class="items-grid">
+
+            <!--
+                Reports will appear here.
+                The sample cards are intentionally removed
+                because script.js loads the real reports.
+            -->
+
+        </div>
+
+    </section>
+
+
+
+    <!-- HOW IT WORKS -->
+
+    <section class="how-section">
+
+        <p class="section-label">
+            SIMPLE & EASY
+        </p>
+
+        <h2>
+            How CampusFind works
+        </h2>
+
+
+        <div class="steps">
+
+
+            <!-- STEP 1 -->
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <h3>
+                    Report
+                </h3>
+
+                <p>
+                    Tell the campus community about something
+                    you lost or found.
+                </p>
+
+            </div>
+
+
+
+            <!-- STEP 2 -->
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <h3>
+                    Search
+                </h3>
+
+                <p>
+                    Browse and search through reported items.
+                </p>
+
+            </div>
+
+
+
+            <!-- STEP 3 -->
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <h3>
+                    Return
+                </h3>
+
+                <p>
+                    Connect with the owner and help return
+                    the item.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="logo">
+            Campus<span>Find</span>
+        </div>
+
+        <p>
+            Helping campus belongings find their way home.
+        </p>
+
+        <p class="copyright">
+            © 2026 CampusFind
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

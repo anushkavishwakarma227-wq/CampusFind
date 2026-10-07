@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Report an Item | CampusFind</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Campus<span>Find</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="report.html" class="active">
+                Report Item
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- REPORT SECTION -->
+
+    <main class="report-page">
+
+        <div class="report-header">
+
+            <p class="section-label">
+                CAMPUS LOST & FOUND
+            </p>
+
+            <h1>
+                Report an Item
+            </h1>
+
+            <p>
+                Help someone find what they lost,
+                or report something you found on campus.
+            </p>
+
+        </div>
+
+
+
+        <!-- FORM -->
+
+        <form id="reportForm">
+
+
+            <!-- LOST / FOUND -->
+
+            <div class="form-group">
+
+                <label>
+                    What happened?
+                </label>
+
+                <div class="choice-container">
+
+                    <label class="choice">
+
+                        <input
+                            type="radio"
+                            name="type"
+                            value="lost"
+                            required
+                        >
+
+                        <span>
+                            I lost something
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice">
+
+                        <input
+                            type="radio"
+                            name="type"
+                            value="found"
+                            required
+                        >
+
+                        <span>
+                            I found something
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ITEM NAME -->
+
+            <div class="form-group">
+
+                <label for="itemName">
+                    Item Name
+                </label>
+
+                <input
+                    type="text"
+                    id="itemName"
+                    name="itemName"
+                    placeholder="Example: Black Wallet"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- CATEGORY -->
+
+            <div class="form-group">
+
+                <label for="category">
+                    Category
+                </label>
+
+                <select
+                    id="category"
+                    name="category"
+                    required
+                >
+
+                    <option value="">
+                        Select a category
+                    </option>
+
+                    <option value="Electronics">
+                        Electronics
+                    </option>
+
+                    <option value="Documents">
+                        Documents
+                    </option>
+
+                    <option value="Books">
+                        Books
+                    </option>
+
+                    <option value="Accessories">
+                        Accessories
+                    </option>
+
+                    <option value="Bags">
+                        Bags
+                    </option>
+
+                    <option value="Clothing">
+                        Clothing
+                    </option>
+
+                    <option value="Keys">
+                        Keys
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- DESCRIPTION -->
+
+            <div class="form-group">
+
+                <label for="description">
+                    Description
+                </label>
+
+                <textarea
+                    id="description"
+                    name="description"
+                    rows="5"
+                    placeholder="Describe the item. Include useful details such as colour, brand or identifying marks."
+                    required
+                ></textarea>
+
+            </div>
+
+
+
+            <!-- LOCATION -->
+
+            <div class="form-group">
+
+                <label for="location">
+                    Location
+                </label>
+
+                <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    placeholder="Example: Library, SVB Block"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- DATE -->
+
+            <div class="form-group">
+
+                <label for="date">
+                    Date
+                </label>
+
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- PHOTO -->
+
+            <div class="form-group">
+
+                <label for="image">
+                    Photo
+                </label>
+
+                <input
+                    type="file"
+                    id="image"
+                    name="image"
+                    accept="image/*"
+                >
+
+                <small>
+                    Upload a clear photo of the item.
+                </small>
+
+            </div>
+
+
+
+            <!-- CONTACT -->
+
+            <div class="form-group">
+
+                <label for="contact">
+                    Contact Information
+                </label>
+
+                <input
+                    type="text"
+                    id="contact"
+                    name="contact"
+                    placeholder="Email or phone number"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+                class="primary-button submit-button"
+            >
+                Submit Report
+            </button>
+
+
+        </form>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="logo">
+            Campus<span>Find</span>
+        </div>
+
+        <p>
+            Helping campus belongings find their way home.
+        </p>
+
+        <p class="copyright">
+            © 2026 CampusFind
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
